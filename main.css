@@ -1,0 +1,93 @@
+/*extra small < 576px
+small >= 576px
+medium >= 768px
+large >= 992px
+extra large >= 1200px*/
+
+.spacing{
+  padding-right: 12px;
+  padding-top: 20px;
+  font-size: 30px;
+}
+#mainHeader{
+  margin-left: 25px;
+  font-style: italic;
+}
+p{
+  margin-left: 20px;
+  margin-right: 20px;
+  text-align: justify;
+  text-justify: auto;
+}
+
+h2{
+  margin: 20px;
+}
+h4{
+  margin:20px;
+  font-style: italic;
+}
+h6{
+  margin-left:20px;
+  font-style: italic;
+  color: grey;
+}
+
+.backgroundd{
+  background-color: teal;
+  border: 2px solid black;
+}
+
+.pic{
+  width: 75%;
+  display:block;
+  margin:auto;
+}
+
+.longPic{
+  width: 75%;
+  display:block;
+  margin:auto;
+}
+
+.shortPic{
+  width:50%;
+  display:block;
+  margin:auto;
+}
+
+.cardPic{
+  border-radius: 15px;
+}
+
+.cardText{
+  margin:0px;
+}
+div > a::before{
+  content: "Click here to "
+}
+
+@media(min-width:1151px){
+  .pic{
+    width:250px;
+  }
+  .longPic{
+    width:200px;
+  }
+  .shortPic{
+    width:150px;
+  }
+  .mech, .cs{
+    width:320px;
+    margin-right: auto;
+  }
+}
+
+@media(max-width:576px){
+  .pic,.longPic,.shortPic{
+    display: none;
+  }
+  .mech, .cs{
+    width:300px;
+  }
+}

@@ -1,0 +1,43 @@
+$width: 25%;
+$radius: ($width/2)*100;
+
+#profilePic{
+  display: block;
+  width: $width;
+  padding-top: 20px;
+  border-radius: $radius;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width:576px){
+  #profilePic{
+    width: $width*2;
+  }
+}
+
+div{
+  ul{
+    font-weight: bold;
+  }
+}
+
+%cards{
+  margin-left:20px;
+  margin-right:20px;
+  margin-bottom:20px;
+  text-align: left;
+  color:white;
+  font-size: 15px;
+  border-radius: 15px;
+}
+
+.mech{
+  @extend %cards;
+  background-color: grey;
+}
+
+.cs{
+  @extend %cards;
+  background-color: #1d90f5;
+}
